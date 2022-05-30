@@ -9,8 +9,8 @@
 #include <UniversalTelegramBot.h>
 
 // Имя и пароль вашей сети Wifi
-#define WIFI_SSID "222"
-#define WIFI_PASSWORD "35905707"
+#define WIFI_SSID "SitKat"
+#define WIFI_PASSWORD "12345678"
 // Телеграм Бот Токен, можно получить у бота @BotFather в Телеграмм
 #define BOT_TOKEN "5397503447:AAF-Mn1SbGqdrIBpc9h2QUJgByVg4_WbzLE"
 
@@ -51,9 +51,9 @@ void handleNewMessages(int numNewMessages)
       for (;;) {
         if (toogle) {
           digitalWrite(ledPin, LOW); // Включить светодиод на плате
-          delay(40);
+          delay(1000);
           digitalWrite(ledPin, HIGH);
-          delay(40);
+          delay(1000);
           if (botMess != bot.getUpdates(bot.last_message_received + 1)) {
             break;
           }
